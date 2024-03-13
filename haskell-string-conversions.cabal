@@ -1,0 +1,39 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           haskell-string-conversions
+version:        0.0.1.0
+synopsis:       haskell-string-conversions
+category:       haskell-string-conversions
+homepage:       https://github.com/haskell-string-conversions/haskell-string-conversions#readme
+bug-reports:    https://github.com/haskell-string-conversions/haskell-string-conversions/issues
+author:         haskell-string-conversions
+maintainer:     haskell-string-conversions
+license:        Apache-2.0
+license-file:   LICENSE
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/haskell-string-conversions/haskell-string-conversions
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: hspec.hs
+  other-modules:
+      StringConversionsSpec
+      Paths_haskell_string_conversions
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wpartial-fields -Wredundant-constraints -fhide-source-paths -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.11 && <5
+    , bytestring
+    , hspec
+    , relude
+    , text
+    , utf8-string
+  default-language: Haskell2010

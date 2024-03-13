@@ -1,0 +1,4 @@
+cradle:
+  cabal:
+    - path: "test"
+      component: "haskell-string-conversions:test:test"
